@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* overflow-x: hidden; */
+
+}
+
+header {
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxhcHRvcCUyMGRlc2t8ZW58MHx8MHx8fDA%3D");
+    height: 750px;
+    background-size: cover;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0%;
+}
+
+.nav1 {
+    height: 80px;
+    padding-left: 70px;
+    padding-top: 20px;
+    width: 50%;
+}
+
+.nav2 {
+    padding-top: 15px;
+    padding-left: 600px;
+    padding-right: 100px;
+    height: 80px;
+    width: 50%;
+}
+
+.nav2 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 50px;
+    margin-left: 50%;
+    margin-top: 20px;
+    border: 1px solid rgb(248, 246, 246);
+}
+
+/* banner middle */
+
+.midheading {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+.midDiscr {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+header button {
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    color: white;
+    margin-left: 45%;
+    border-radius: 50px;
+}
+
+/* findoutmore section */
+
+#findoutmore {
+    width: 100%;
+    background-color: red;
+    height: 600px;
+}
+
+#findoutmore h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+
+#findoutmore p {
+    color: white;
+    text-align: center;
+}
+
+#findoutmore button {
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    margin-left: 45%;
+    border-radius: 50px;
+}
+
+/* SERVICE */
+
+#services {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.col {
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+}
+
+.row {
+    margin-top: 40px;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+#services h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#services hr {
+    width: 50px;
+    margin-left: 48%;
+    margin-top: 20px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+/* Image Section */
+#images {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+
+.row1 {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    margin-left: 11%;
+}
+
+.row2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-left: 11%;
+}
+
+.col1 {
+    position: relative; 
+}
+
+
+.col1::before {     /*   nammal ibide oru layer undaki enit ath invisble aki krn chumma ital varu illa enit read down */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 15, 15, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.col1:hover::before {
+   background-color: rgba(221, 22, 22, 0.5);  /*  ibide namal athine oru color kodathu */
+}
+
+/* DOWNLOAD SECTION */
+
+#downl {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(41, 41, 41);
+}
+
+#downl h1 {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#downl button {
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 45%;
+    border-radius: 50px;
+}
+
+#liveform {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+#liveform input {
+    width: 400px;
+    height: 35px;
+}
+
+#liveform form {
+    margin-top: 50px;
+    margin-left: 35%;
+}
+
+#liveform h1 {
+    font-size: 35px;
+    padding-top: 100px;
+    color: rgb(47, 46, 46);
+    text-align: center;
+}
+
+#liveform p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.col1 .discription{
+    top: 45%;
+    left: 35%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.col1:hover .discription{
+    opacity: 1;
+    transition:opacity 1s ease;
+
+}
